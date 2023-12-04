@@ -1,0 +1,41 @@
+body {
+    background-color: black;
+    color: #fff;
+}
+
+
+span {
+   font-family: Arial, Helvetica, sans-serif;
+   color: #c8d605;
+}
+
+#grid {
+    display: grid;
+    grid-template-columns: repeat(3, 30px);
+    grid-template-rows: repeat(3, 30px);
+}
+
+.cell {
+    background: #fff;
+    font-size: 0;
+    border: 1px solid Blue;
+    border-radius: 2px;
+    padding: 10px;
+}
+
+.visible {
+    font-size: 16px;
+    background: LightGrey;
+    outline: none;
+    -webkit-box-shadow: inset 0px 0px 5px #c1c1c1;
+       -moz-box-shadow: inset 0px 0px 5px #c1c1c1;
+            box-shadow: inset 0px 0px 5px #c1c1c1;
+}
+
+.flag {
+    background: rgb(189, 189, 0);
+}
+
+.visible.mine {
+    background: Red;
+}
